@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bilan Store (WIP)
+
+A e-commerce platform.
 
 ## Getting Started
 
-First, run the development server:
+### Clone the Repository
+To get started, clone the repository and navigate to the project directory:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/sonajX/BilanStore.git
+```
+then..
+```bash
+cd BilanStore
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install Dependencies
+Install the required Node.js dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Frontend Folder Structure (WIP)
 
-## Learn More
+The following is the current folder structure for the frontend:
 
-To learn more about Next.js, take a look at the following resources:
+```
+app/
+├── layout.js           # Root layout component
+├── page.js             # Landing page
+├── products/
+│   ├── page.js         # Products listing page
+│   └── [id]/
+│       └── page.js     # Individual product page
+├── cart/
+│   └── page.js         # Shopping cart page
+├── globals.css         # Global styles
+├── data/
+│   └── products.js     # Product data
+└── components/
+    ├── Navbar.jsx      # Navigation component
+    ├── Footer.jsx      # Footer component
+    ├── ProductCard.jsx # Product display card
+    ├── Button.jsx      # Reusable button component
+    ├── Hero.jsx        # Hero section component
+    ├── FeaturedProducts.jsx # Featured products section
+    ├── CategoryList.jsx # Categories section
+    └── CartItem.jsx    # Shopping cart item
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Stay tuned for updates as the project evolves!
